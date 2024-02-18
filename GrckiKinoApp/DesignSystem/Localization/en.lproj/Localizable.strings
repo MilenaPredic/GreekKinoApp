@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  GrckiKinoApp
+
+  Created by Milena Predic on 15.2.24..
+  
+*/
+
+//tabs
+"upcoming_draws" = "Upcoming Draws";
+"ticket_title" = "Ticket";
+"live_draw_title" = "Live Draw";
+"results_title" = "Results";
+
+//upcoming draws
+"upcoming_draws_title" = "Greek KINO";
+"drawing_time" = "Drawing time";
+"remaining_for_submission" = "Remaining for submission";
+
+//stock
+"draw_time" = "Drawing time: ";
+"round" = "Round: ";
+"random_selection" = "Random Selection";
+"numbers" = "Numbers: ";
+"max_number_of_selections" = "Maximum number of selections";
+"remaining_time_for_submission" = "Remaining time for submission: %@";
+
+//results
+"drawing_time_with_date" = "Drawing time: %@.";
+"round_number" = "Round: %@";

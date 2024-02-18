@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD631C702B82B65600390D9B /* GrckiKinoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD631C6F2B82B65600390D9B /* GrckiKinoAppApp.swift */; };
+		FD631C742B82B65700390D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD631C732B82B65700390D9B /* Assets.xcassets */; };
+		FDD363F12B82BD6800E86F90 /* LiveDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363CF2B82BD6800E86F90 /* LiveDrawView.swift */; };
+		FDD363F22B82BD6800E86F90 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D12B82BD6800E86F90 /* MainTabView.swift */; };
+		FDD363F32B82BD6800E86F90 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D32B82BD6800E86F90 /* ResultsView.swift */; };
+		FDD363F42B82BD6800E86F90 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D42B82BD6800E86F90 /* ResultsViewModel.swift */; };
+		FDD363F52B82BD6800E86F90 /* UpcomingDrawsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D62B82BD6800E86F90 /* UpcomingDrawsView.swift */; };
+		FDD363F62B82BD6800E86F90 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D82B82BD6800E86F90 /* StockViewModel.swift */; };
+		FDD363F72B82BD6800E86F90 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363D92B82BD6800E86F90 /* StockView.swift */; };
+		FDD363F82B82BD6800E86F90 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363DB2B82BD6800E86F90 /* DateUtils.swift */; };
+		FDD363F92B82BD6800E86F90 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363DC2B82BD6800E86F90 /* Modifiers.swift */; };
+		FDD363FA2B82BD6800E86F90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363DD2B82BD6800E86F90 /* Extensions.swift */; };
+		FDD363FB2B82BD6800E86F90 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363DE2B82BD6800E86F90 /* AppConstants.swift */; };
+		FDD363FC2B82BD6800E86F90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDD363E02B82BD6800E86F90 /* Localizable.strings */; };
+		FDD363FD2B82BD6800E86F90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD363E42B82BD6800E86F90 /* Preview Assets.xcassets */; };
+		FDD363FE2B82BD6800E86F90 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363E72B82BD6800E86F90 /* APIError.swift */; };
+		FDD363FF2B82BD6800E86F90 /* NetworkParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363E82B82BD6800E86F90 /* NetworkParameterEncoder.swift */; };
+		FDD364002B82BD6800E86F90 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363E92B82BD6800E86F90 /* NetworkRouter.swift */; };
+		FDD364012B82BD6800E86F90 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363EA2B82BD6800E86F90 /* NetworkResponse.swift */; };
+		FDD364022B82BD6800E86F90 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363EB2B82BD6800E86F90 /* NetworkingService.swift */; };
+		FDD364032B82BD6800E86F90 /* DrawsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363ED2B82BD6800E86F90 /* DrawsRepository.swift */; };
+		FDD364042B82BD6800E86F90 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363EF2B82BD6800E86F90 /* Draw.swift */; };
+		FDD364052B82BD6800E86F90 /* SelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD363F02B82BD6800E86F90 /* SelectionManager.swift */; };
+		FDD364072B82BE8C00E86F90 /* UpcomingDrawsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364062B82BE8C00E86F90 /* UpcomingDrawsViewModel.swift */; };
+		FDD3641B2B82C32100E86F90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FDD3641A2B82C32100E86F90 /* Alamofire */; };
+		FDD3644D2B82C90000E86F90 /* MockDrawRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3644C2B82C90000E86F90 /* MockDrawRepository.swift */; };
+		FDD3644F2B82C91500E86F90 /* MockNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3644E2B82C91500E86F90 /* MockNetworkingService.swift */; };
+		FDD364512B82C93400E86F90 /* MockSelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364502B82C93400E86F90 /* MockSelectionManager.swift */; };
+		FDD364532B82C94800E86F90 /* DrawRepository_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364522B82C94800E86F90 /* DrawRepository_Tests.swift */; };
+		FDD364552B82CA2800E86F90 /* ResultsViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364542B82CA2800E86F90 /* ResultsViewModel_Tests.swift */; };
+		FDD364572B82CA4400E86F90 /* StockViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364562B82CA4400E86F90 /* StockViewModel_Tests.swift */; };
+		FDD364592B82CA6700E86F90 /* UpcomingDrawsViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD364582B82CA6700E86F90 /* UpcomingDrawsViewModel_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD631C7D2B82B65700390D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD631C642B82B65600390D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD631C6B2B82B65600390D9B;
+			remoteInfo = GrckiKinoApp;
+		};
+		FD631C872B82B65700390D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD631C642B82B65600390D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD631C6B2B82B65600390D9B;
+			remoteInfo = GrckiKinoApp;
+		};
+		FDD364462B82C86500E86F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD631C642B82B65600390D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD631C6B2B82B65600390D9B;
+			remoteInfo = GrckiKinoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD631C6C2B82B65600390D9B /* GrckiKinoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrckiKinoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD631C6F2B82B65600390D9B /* GrckiKinoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrckiKinoAppApp.swift; sourceTree = "<group>"; };
+		FD631C732B82B65700390D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD631C762B82B65700390D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD631C7C2B82B65700390D9B /* GrckiKinoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrckiKinoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD631C862B82B65700390D9B /* GrckiKinoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrckiKinoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD363CF2B82BD6800E86F90 /* LiveDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDrawView.swift; sourceTree = "<group>"; };
+		FDD363D12B82BD6800E86F90 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FDD363D32B82BD6800E86F90 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		FDD363D42B82BD6800E86F90 /* ResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		FDD363D62B82BD6800E86F90 /* UpcomingDrawsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDrawsView.swift; sourceTree = "<group>"; };
+		FDD363D82B82BD6800E86F90 /* StockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		FDD363D92B82BD6800E86F90 /* StockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		FDD363DB2B82BD6800E86F90 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		FDD363DC2B82BD6800E86F90 /* Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		FDD363DD2B82BD6800E86F90 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FDD363DE2B82BD6800E86F90 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		FDD363E22B82BD6800E86F90 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDD363E42B82BD6800E86F90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDD363E72B82BD6800E86F90 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FDD363E82B82BD6800E86F90 /* NetworkParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkParameterEncoder.swift; sourceTree = "<group>"; };
+		FDD363E92B82BD6800E86F90 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		FDD363EA2B82BD6800E86F90 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		FDD363EB2B82BD6800E86F90 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		FDD363ED2B82BD6800E86F90 /* DrawsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawsRepository.swift; sourceTree = "<group>"; };
+		FDD363EF2B82BD6800E86F90 /* Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		FDD363F02B82BD6800E86F90 /* SelectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionManager.swift; sourceTree = "<group>"; };
+		FDD364062B82BE8C00E86F90 /* UpcomingDrawsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDrawsViewModel.swift; sourceTree = "<group>"; };
+		FDD364422B82C86500E86F90 /* GrckiKinoAppUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrckiKinoAppUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD3644C2B82C90000E86F90 /* MockDrawRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDrawRepository.swift; sourceTree = "<group>"; };
+		FDD3644E2B82C91500E86F90 /* MockNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkingService.swift; sourceTree = "<group>"; };
+		FDD364502B82C93400E86F90 /* MockSelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSelectionManager.swift; sourceTree = "<group>"; };
+		FDD364522B82C94800E86F90 /* DrawRepository_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRepository_Tests.swift; sourceTree = "<group>"; };
+		FDD364542B82CA2800E86F90 /* ResultsViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel_Tests.swift; sourceTree = "<group>"; };
+		FDD364562B82CA4400E86F90 /* StockViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel_Tests.swift; sourceTree = "<group>"; };
+		FDD364582B82CA6700E86F90 /* UpcomingDrawsViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDrawsViewModel_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD631C692B82B65600390D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD3641B2B82C32100E86F90 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C792B82B65700390D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C832B82B65700390D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3643F2B82C86500E86F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD631C632B82B65600390D9B = {
+			isa = PBXGroup;
+			children = (
+				FD631C6E2B82B65600390D9B /* GrckiKinoApp */,
+				FDD364432B82C86500E86F90 /* GrckiKinoAppUnitTests */,
+				FD631C6D2B82B65600390D9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD631C6D2B82B65600390D9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD631C6C2B82B65600390D9B /* GrckiKinoApp.app */,
+				FD631C7C2B82B65700390D9B /* GrckiKinoAppTests.xctest */,
+				FD631C862B82B65700390D9B /* GrckiKinoAppUITests.xctest */,
+				FDD364422B82C86500E86F90 /* GrckiKinoAppUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD631C6E2B82B65600390D9B /* GrckiKinoApp */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363E52B82BD6800E86F90 /* Data */,
+				FDD363DA2B82BD6800E86F90 /* DesignSystem */,
+				FDD363CD2B82BD6800E86F90 /* Presentation */,
+				FDD363E32B82BD6800E86F90 /* Preview Content */,
+				FD631C6F2B82B65600390D9B /* GrckiKinoAppApp.swift */,
+				FD631C732B82B65700390D9B /* Assets.xcassets */,
+				FD631C752B82B65700390D9B /* Preview Content */,
+			);
+			path = GrckiKinoApp;
+			sourceTree = "<group>";
+		};
+		FD631C752B82B65700390D9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD631C762B82B65700390D9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDD363CD2B82BD6800E86F90 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363CE2B82BD6800E86F90 /* LiveDraw */,
+				FDD363D02B82BD6800E86F90 /* TabView */,
+				FDD363D22B82BD6800E86F90 /* Results */,
+				FDD363D52B82BD6800E86F90 /* UpcomingDraws */,
+				FDD363D72B82BD6800E86F90 /* Stock */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FDD363CE2B82BD6800E86F90 /* LiveDraw */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363CF2B82BD6800E86F90 /* LiveDrawView.swift */,
+			);
+			path = LiveDraw;
+			sourceTree = "<group>";
+		};
+		FDD363D02B82BD6800E86F90 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363D12B82BD6800E86F90 /* MainTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		FDD363D22B82BD6800E86F90 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363D32B82BD6800E86F90 /* ResultsView.swift */,
+				FDD363D42B82BD6800E86F90 /* ResultsViewModel.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		FDD363D52B82BD6800E86F90 /* UpcomingDraws */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363D62B82BD6800E86F90 /* UpcomingDrawsView.swift */,
+				FDD364062B82BE8C00E86F90 /* UpcomingDrawsViewModel.swift */,
+			);
+			path = UpcomingDraws;
+			sourceTree = "<group>";
+		};
+		FDD363D72B82BD6800E86F90 /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363D82B82BD6800E86F90 /* StockViewModel.swift */,
+				FDD363D92B82BD6800E86F90 /* StockView.swift */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		FDD363DA2B82BD6800E86F90 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363DB2B82BD6800E86F90 /* DateUtils.swift */,
+				FDD363DC2B82BD6800E86F90 /* Modifiers.swift */,
+				FDD363DD2B82BD6800E86F90 /* Extensions.swift */,
+				FDD363DE2B82BD6800E86F90 /* AppConstants.swift */,
+				FDD363DF2B82BD6800E86F90 /* Localization */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		FDD363DF2B82BD6800E86F90 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363E02B82BD6800E86F90 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FDD363E32B82BD6800E86F90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363E42B82BD6800E86F90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDD363E52B82BD6800E86F90 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363E62B82BD6800E86F90 /* Networking */,
+				FDD363EC2B82BD6800E86F90 /* Repositories */,
+				FDD363EE2B82BD6800E86F90 /* Model */,
+				FDD363F02B82BD6800E86F90 /* SelectionManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FDD363E62B82BD6800E86F90 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363E72B82BD6800E86F90 /* APIError.swift */,
+				FDD363E82B82BD6800E86F90 /* NetworkParameterEncoder.swift */,
+				FDD363E92B82BD6800E86F90 /* NetworkRouter.swift */,
+				FDD363EA2B82BD6800E86F90 /* NetworkResponse.swift */,
+				FDD363EB2B82BD6800E86F90 /* NetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FDD363EC2B82BD6800E86F90 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363ED2B82BD6800E86F90 /* DrawsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FDD363EE2B82BD6800E86F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDD363EF2B82BD6800E86F90 /* Draw.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDD364432B82C86500E86F90 /* GrckiKinoAppUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3644B2B82C87400E86F90 /* MockData */,
+				FDD364522B82C94800E86F90 /* DrawRepository_Tests.swift */,
+				FDD364542B82CA2800E86F90 /* ResultsViewModel_Tests.swift */,
+				FDD364562B82CA4400E86F90 /* StockViewModel_Tests.swift */,
+				FDD364582B82CA6700E86F90 /* UpcomingDrawsViewModel_Tests.swift */,
+			);
+			path = GrckiKinoAppUnitTests;
+			sourceTree = "<group>";
+		};
+		FDD3644B2B82C87400E86F90 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3644C2B82C90000E86F90 /* MockDrawRepository.swift */,
+				FDD3644E2B82C91500E86F90 /* MockNetworkingService.swift */,
+				FDD364502B82C93400E86F90 /* MockSelectionManager.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD631C6B2B82B65600390D9B /* GrckiKinoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD631C902B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoApp" */;
+			buildPhases = (
+				FD631C682B82B65600390D9B /* Sources */,
+				FD631C692B82B65600390D9B /* Frameworks */,
+				FD631C6A2B82B65600390D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrckiKinoApp;
+			packageProductDependencies = (
+				FDD3641A2B82C32100E86F90 /* Alamofire */,
+			);
+			productName = GrckiKinoApp;
+			productReference = FD631C6C2B82B65600390D9B /* GrckiKinoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD631C7B2B82B65700390D9B /* GrckiKinoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD631C932B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoAppTests" */;
+			buildPhases = (
+				FD631C782B82B65700390D9B /* Sources */,
+				FD631C792B82B65700390D9B /* Frameworks */,
+				FD631C7A2B82B65700390D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD631C7E2B82B65700390D9B /* PBXTargetDependency */,
+			);
+			name = GrckiKinoAppTests;
+			productName = GrckiKinoAppTests;
+			productReference = FD631C7C2B82B65700390D9B /* GrckiKinoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD631C852B82B65700390D9B /* GrckiKinoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD631C962B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoAppUITests" */;
+			buildPhases = (
+				FD631C822B82B65700390D9B /* Sources */,
+				FD631C832B82B65700390D9B /* Frameworks */,
+				FD631C842B82B65700390D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD631C882B82B65700390D9B /* PBXTargetDependency */,
+			);
+			name = GrckiKinoAppUITests;
+			productName = GrckiKinoAppUITests;
+			productReference = FD631C862B82B65700390D9B /* GrckiKinoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FDD364412B82C86500E86F90 /* GrckiKinoAppUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD364482B82C86500E86F90 /* Build configuration list for PBXNativeTarget "GrckiKinoAppUnitTests" */;
+			buildPhases = (
+				FDD3643E2B82C86500E86F90 /* Sources */,
+				FDD3643F2B82C86500E86F90 /* Frameworks */,
+				FDD364402B82C86500E86F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD364472B82C86500E86F90 /* PBXTargetDependency */,
+			);
+			name = GrckiKinoAppUnitTests;
+			productName = GrckiKinoAppUnitTests;
+			productReference = FDD364422B82C86500E86F90 /* GrckiKinoAppUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD631C642B82B65600390D9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FD631C6B2B82B65600390D9B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FD631C7B2B82B65700390D9B = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+						TestTargetID = FD631C6B2B82B65600390D9B;
+					};
+					FD631C852B82B65700390D9B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FD631C6B2B82B65600390D9B;
+					};
+					FDD364412B82C86500E86F90 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FD631C6B2B82B65600390D9B;
+					};
+				};
+			};
+			buildConfigurationList = FD631C672B82B65600390D9B /* Build configuration list for PBXProject "GrckiKinoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = hr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				hr,
+			);
+			mainGroup = FD631C632B82B65600390D9B;
+			packageReferences = (
+				FDD364192B82C32100E86F90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = FD631C6D2B82B65600390D9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD631C6B2B82B65600390D9B /* GrckiKinoApp */,
+				FD631C7B2B82B65700390D9B /* GrckiKinoAppTests */,
+				FD631C852B82B65700390D9B /* GrckiKinoAppUITests */,
+				FDD364412B82C86500E86F90 /* GrckiKinoAppUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD631C6A2B82B65600390D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD363FD2B82BD6800E86F90 /* Preview Assets.xcassets in Resources */,
+				FDD363FC2B82BD6800E86F90 /* Localizable.strings in Resources */,
+				FD631C742B82B65700390D9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C7A2B82B65700390D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C842B82B65700390D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD364402B82C86500E86F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD631C682B82B65600390D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD364042B82BD6800E86F90 /* Draw.swift in Sources */,
+				FDD363F12B82BD6800E86F90 /* LiveDrawView.swift in Sources */,
+				FDD364032B82BD6800E86F90 /* DrawsRepository.swift in Sources */,
+				FDD363FF2B82BD6800E86F90 /* NetworkParameterEncoder.swift in Sources */,
+				FDD364002B82BD6800E86F90 /* NetworkRouter.swift in Sources */,
+				FDD363F72B82BD6800E86F90 /* StockView.swift in Sources */,
+				FDD364052B82BD6800E86F90 /* SelectionManager.swift in Sources */,
+				FDD363F42B82BD6800E86F90 /* ResultsViewModel.swift in Sources */,
+				FDD363F52B82BD6800E86F90 /* UpcomingDrawsView.swift in Sources */,
+				FDD363F92B82BD6800E86F90 /* Modifiers.swift in Sources */,
+				FDD363F82B82BD6800E86F90 /* DateUtils.swift in Sources */,
+				FDD363F32B82BD6800E86F90 /* ResultsView.swift in Sources */,
+				FDD364012B82BD6800E86F90 /* NetworkResponse.swift in Sources */,
+				FDD363FB2B82BD6800E86F90 /* AppConstants.swift in Sources */,
+				FDD364022B82BD6800E86F90 /* NetworkingService.swift in Sources */,
+				FD631C702B82B65600390D9B /* GrckiKinoAppApp.swift in Sources */,
+				FDD364072B82BE8C00E86F90 /* UpcomingDrawsViewModel.swift in Sources */,
+				FDD363F22B82BD6800E86F90 /* MainTabView.swift in Sources */,
+				FDD363FA2B82BD6800E86F90 /* Extensions.swift in Sources */,
+				FDD363F62B82BD6800E86F90 /* StockViewModel.swift in Sources */,
+				FDD363FE2B82BD6800E86F90 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C782B82B65700390D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD631C822B82B65700390D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD3643E2B82C86500E86F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD364532B82C94800E86F90 /* DrawRepository_Tests.swift in Sources */,
+				FDD364552B82CA2800E86F90 /* ResultsViewModel_Tests.swift in Sources */,
+				FDD364572B82CA4400E86F90 /* StockViewModel_Tests.swift in Sources */,
+				FDD364512B82C93400E86F90 /* MockSelectionManager.swift in Sources */,
+				FDD3644D2B82C90000E86F90 /* MockDrawRepository.swift in Sources */,
+				FDD364592B82CA6700E86F90 /* UpcomingDrawsViewModel_Tests.swift in Sources */,
+				FDD3644F2B82C91500E86F90 /* MockNetworkingService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD631C7E2B82B65700390D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD631C6B2B82B65600390D9B /* GrckiKinoApp */;
+			targetProxy = FD631C7D2B82B65700390D9B /* PBXContainerItemProxy */;
+		};
+		FD631C882B82B65700390D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD631C6B2B82B65600390D9B /* GrckiKinoApp */;
+			targetProxy = FD631C872B82B65700390D9B /* PBXContainerItemProxy */;
+		};
+		FDD364472B82C86500E86F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD631C6B2B82B65600390D9B /* GrckiKinoApp */;
+			targetProxy = FDD364462B82C86500E86F90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDD363E02B82BD6800E86F90 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD363E22B82BD6800E86F90 /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD631C8E2B82B65700390D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD631C8F2B82B65700390D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD631C912B82B65700390D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrckiKinoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD631C922B82B65700390D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrckiKinoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD631C942B82B65700390D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "GrckiKinoAppTests/GrckiKinoAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrckiKinoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrckiKinoApp";
+			};
+			name = Debug;
+		};
+		FD631C952B82B65700390D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "GrckiKinoAppTests/GrckiKinoAppTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrckiKinoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrckiKinoApp";
+			};
+			name = Release;
+		};
+		FD631C972B82B65700390D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrckiKinoApp;
+			};
+			name = Debug;
+		};
+		FD631C982B82B65700390D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrckiKinoApp;
+			};
+			name = Release;
+		};
+		FDD364492B82C86500E86F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrckiKinoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrckiKinoApp";
+			};
+			name = Debug;
+		};
+		FDD3644A2B82C86500E86F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A7777BG68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = organization.GrckiKinoAppUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrckiKinoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrckiKinoApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD631C672B82B65600390D9B /* Build configuration list for PBXProject "GrckiKinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD631C8E2B82B65700390D9B /* Debug */,
+				FD631C8F2B82B65700390D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD631C902B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD631C912B82B65700390D9B /* Debug */,
+				FD631C922B82B65700390D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD631C932B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD631C942B82B65700390D9B /* Debug */,
+				FD631C952B82B65700390D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD631C962B82B65700390D9B /* Build configuration list for PBXNativeTarget "GrckiKinoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD631C972B82B65700390D9B /* Debug */,
+				FD631C982B82B65700390D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD364482B82C86500E86F90 /* Build configuration list for PBXNativeTarget "GrckiKinoAppUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD364492B82C86500E86F90 /* Debug */,
+				FDD3644A2B82C86500E86F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDD364192B82C32100E86F90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDD3641A2B82C32100E86F90 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDD364192B82C32100E86F90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD631C642B82B65600390D9B /* Project object */;
+}

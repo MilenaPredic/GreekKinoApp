@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  GrckiKinoApp
+
+  Created by Milena Predic on 15.2.24..
+  
+*/
+
+//tabs
+"upcoming_draws_title" = "Naredna kola";
+"ticket_title" = "Talon";
+"live_draw_title" = "Uživo izvlačenje";
+"results_title" = "Rezultati";
+
+//upcoming draws
+"upcoming_draws" = "GRČKI KINO";
+"drawing_time" = "Vreme izvlačenja";
+"remaining_for_submission" = "Preostalo za uplatu";
+
+//stock
+"draw_time" = "Vreme izvlačenja: ";
+"round" = "Kolo: ";
+"random_selection" = "Slučajni odabir";
+"numbers" = "Brojeva: ";
+"max_number_of_selections" = "Maksimalan broj selekcija";
+"remaining_time_for_submission" = "Preostalo vreme za uplatu: %@";
+
+//results
+"drawing_time_with_date" = "Vreme izvlačenja: %@.";
+"round_number" = "Kolo: %@";
